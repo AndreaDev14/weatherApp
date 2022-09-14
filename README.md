@@ -2,7 +2,8 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="645" alt="Captura de pantalla 2022-09-14 a las 1 54 00 p  m" src="https://user-images.githubusercontent.com/108431169/190215816-7bf6e81f-3d05-4637-a6a2-f5247f5b04c6.png">
+
 
 ### Built with
 - Semantic HTML5 markup
