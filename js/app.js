@@ -5,6 +5,8 @@ const result = document.querySelector('#result');
 const element = document.querySelector('#body');
 
 
+
+
 window.addEventListener('DOMContentLoaded', fillSelect)
 window.addEventListener('load', () => {
   form.addEventListener('submit', searchWeather);
@@ -13,14 +15,29 @@ window.addEventListener('load', () => {
 
 
 function fillSelect() {
+
+  // const url = 'https://restcountries.com/v3.1/all';
   
-  
-  const url = 'https://restcountries.com/v3.1/all'
+  const url = 'https://restcountries.com/v2/all?fieldsname,capital,currencies,name,capital,callingcode';
+  ;
   fetch(url)
     .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
-}
+    .then(data => {
+      data.forEach(country => {
+        console.log(country)
+   
+        const {name, alpha2toCode } = country;
+        const selectCountry = document.querySelector('#country')
+
+        const optionCountry = document.createElement('option')
+        optionCountry.value = alpha2toCode;
+        optionCountry.textContent = name;
+
+        selectCountry.appendChild(optionCountry);
+      });
+
+    });
+  }
 
 function searchWeather(e) {
   e.preventDefault();
