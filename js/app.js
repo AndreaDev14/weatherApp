@@ -169,24 +169,68 @@ function backGroudColor(main_description) {
 switch (main_description) {
     case 'Thunderstorm':
        
+      
+        element.classList.remove('drizzle');
+        element.classList.remove('rain');
+        element.classList.remove('snow');
+        element.classList.remove('clear');
+        element.classList.remove('cloud');
+        element.classList.remove('snow')
         element.classList.add('thunderstorm');
         break;
       case 'Drizzle':
+        element.classList.remove('thunderstorm');
+        element.classList.remove('rain');
+        element.classList.remove('snow');
+        element.classList.remove('clear');
+        element.classList.remove('cloud');
+        element.classList.remove('snow')
         element.classList.add('drizzle');
         break;
       case 'Rain':
+        element.classList.remove('thunderstorm');
+        element.classList.remove('drizzle');
+        element.classList.remove('snow');
+        element.classList.remove('clear');
+        element.classList.remove('cloud');
+        element.classList.remove('snow')
           element.classList.add('rain');
           break;
       case "Snow":
+        element.classList.remove('thunderstorm');
+        element.classList.remove('drizzle');
+        element.classList.remove('snow');
+        element.classList.remove('clear');
+        element.classList.remove('cloud');
+        element.classList.remove('rain');
         element.classList.add('snow');
         break;
         case 'Clear':
+          element.classList.remove('thunderstorm');
+          element.classList.remove('drizzle');
+          element.classList.remove('snow');
+          element.classList.remove('clear');
+          element.classList.remove('cloud');
+          element.classList.remove('rain');
           element.classList.add('clear');
           break;
       case 'Atmosphere':
               newIcon = 'weather';
+              element.classList.remove('thunderstorm');
+              element.classList.remove('drizzle');
+              element.classList.remove('snow');
+              element.classList.remove('clear');
+              element.classList.remove('cloud');
+              element.classList.remove('rain');
+              element.classList.add('clear');
               break;
       case 'Clouds':
+            element.classList.remove('thunderstorm');
+              element.classList.remove('drizzle');
+              element.classList.remove('snow');
+              element.classList.remove('clear');
+              element.classList.remove('cloud');
+              element.classList.remove('rain');
        
         element.classList.add('cloud');
         break;
