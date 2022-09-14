@@ -23,12 +23,12 @@ function fillSelect() {
     .then(response => response.json())
     .then(data => {
       data.forEach(country => {
-   
-        const {name, alpha2toCode } = country;
+        const {name, alpha2Code} = country;
+      
         const selectCountry = document.querySelector('#country')
 
         const optionCountry = document.createElement('option')
-        optionCountry.value = alpha2toCode;
+        optionCountry.value = alpha2Code;
         optionCountry.textContent = name;
 
         selectCountry.appendChild(optionCountry);
@@ -121,7 +121,7 @@ function showWeather(data) {
             newIcon = 'weather';
             break;
     case 'Clouds':
-      newIcon = 'cloudy';
+      newIcon = 'cloudy-day-1';
       break;
     
 
@@ -168,31 +168,26 @@ function backGroudColor(main_description) {
   
 switch (main_description) {
     case 'Thunderstorm':
-        newIcon = 'thunder';
+       
         element.classList.add('thunderstorm');
         break;
       case 'Drizzle':
-          
-        newIcon = 'rainy-2';
         element.classList.add('drizzle');
         break;
       case 'Rain':
-          newIcon = 'rainy-7';
           element.classList.add('rain');
           break;
       case "Snow":
-        newIcon = 'snow-6';
         element.classList.add('snow');
         break;
         case 'Clear':
-          newIcon = 'day';
           element.classList.add('clear');
           break;
       case 'Atmosphere':
               newIcon = 'weather';
               break;
       case 'Clouds':
-        newIcon = 'cloudy';
+       
         element.classList.add('cloud');
         break;
       
