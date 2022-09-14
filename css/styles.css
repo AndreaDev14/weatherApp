@@ -113,7 +113,7 @@ img {
 }
 
 /* form */
-.card_formulario {
+.card_form {
   width: 35rem;
   height: 18rem;
   background-color: #efefef;
@@ -125,7 +125,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .card_formulario {
+  .card_form {
     width: 45rem;
     height: 17rem;
   }
@@ -137,7 +137,7 @@ select {
   width: 100%;
 }
 
-.formulario_submit {
+.form_submit {
   background-color: #7fbcd2;
   border-radius: 1rem;
   width: 100%;
@@ -147,7 +147,7 @@ select {
   padding: 0.5rem;
 }
 @media (min-width: 768pc) {
-  .formulario_submit {
+  .form_submit {
     margin-top: 2rem;
   }
 }
