@@ -16,15 +16,13 @@ window.addEventListener('load', () => {
 
 function fillSelect() {
 
-  // const url = 'https://restcountries.com/v3.1/all';
   
   const url = 'https://restcountries.com/v2/all?fieldsname,capital,currencies,name,capital,callingcode';
-  ;
+  
   fetch(url)
     .then(response => response.json())
     .then(data => {
       data.forEach(country => {
-        console.log(country)
    
         const {name, alpha2toCode } = country;
         const selectCountry = document.querySelector('#country')
@@ -44,9 +42,9 @@ function searchWeather(e) {
   const country = document.querySelector('#country').value;
   const city = document.querySelector('#city').value;
 
-  //realizamos el mensaje de error
+  // display error message
   if (city === '' || country === '') {
-    showError('All fields are required');
+   displayError('All fields are required');
 
     return;
   }
@@ -57,7 +55,7 @@ function searchWeather(e) {
   form.reset();
 }
 
-function showError(mesage) {
+function displayError(mesage) {
   Swal.fire({
     icon: 'error',
     title: mesage,
@@ -79,7 +77,7 @@ function askAPI(country, city) {
     .then((data) => {
       if (data.cod === '404') {
         refreshHTML();
-        showError('City not found');
+       displayError('City not found');
       } else {
         showWeather(data);
       }
