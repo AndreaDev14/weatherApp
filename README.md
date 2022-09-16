@@ -4,7 +4,8 @@
 
 ### Screenshot
 
-<img width="645" alt="Captura de pantalla 2022-09-14 a las 1 54 00 p  m" src="https://user-images.githubusercontent.com/108431169/190215816-7bf6e81f-3d05-4637-a6a2-f5247f5b04c6.png">
+<img width="603" alt="Captura de pantalla 2022-09-16 a las 7 05 58 p  m" src="https://user-images.githubusercontent.com/108431169/190810969-a89d8ef5-cf71-4521-bae5-dc383af86727.png">
+
 
 
 ### Built with
