@@ -23,21 +23,23 @@
 
         <div class="container">
 
-            <div id="result">
-
-            </div>
+            <div id="result"></div>
 
             <div class="card_form">
                 <form id="form" action="#" method="POST">
 
-                    <input type="text" name="city" id="city" placeholder="Weather in your city" />
+                    <div class="form_city">
+                        <label for="city">Write your city: </label>
+                        <input type="text" name="city" id="city" placeholder="Weather in your city" />
+                    </div>
 
+                    <div class="form_country">
+                        <label for="country">Select your country: </label>
+                        <select id="country">
+                            <option disabled selected value="">-- Select --</option>
 
-                    <select id="country">
-                        <option disabled selected value="">-- Select --</option>
-                    
-                    </select>
-
+                        </select>
+                    </div>
 
                     <input type="submit" class="form_submit" value="Search" />
 
@@ -55,9 +57,9 @@
     <footer>
         <p>Made by: Andrea Ruiz </p>
         <div class="links">
-           <a href="https://github.com/AndreaDev14/weatherFinder-app" target="_blank"><i class="fa-brands fa-github"></i></a> 
+            <a href="https://github.com/AndreaDev14" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-          <a href="https://twitter.com/Andreadev9" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="https://twitter.com/Andreadev9" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
 
         </div>
     </footer>

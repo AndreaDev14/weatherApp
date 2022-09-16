@@ -29,10 +29,16 @@ a {
 h1 {
   color: var(--White);
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 5 0;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: 768px) { 
+  h1 {
+    font-size: 5rem;
+  }
 }
 
 img {
@@ -119,9 +125,8 @@ img {
   background-color: #efefef;
   padding: 2rem;
   border-radius: 2rem;
-  box-shadow: -2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 0px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid #E8E8E8;
 }
 
 @media (min-width: 768px) {
@@ -133,10 +138,18 @@ img {
 
 form input,
 select {
-  margin-top: 2rem;
   width: 100%;
 }
 
+input, select {
+  border: 2px solid #E8E8E8;
+  padding: .2rem;
+  border-radius: .5rem;
+}
+
+.form_country {
+  margin: 1rem 0;
+}
 .form_submit {
   background-color: #7fbcd2;
   border-radius: 1rem;
@@ -145,12 +158,9 @@ select {
   font-size: 2rem;
   cursor: pointer;
   padding: 0.5rem;
+  border: 2px solid #E8E8E8;
 }
-@media (min-width: 768pc) {
-  .form_submit {
-    margin-top: 2rem;
-  }
-}
+
 
 footer {
   display: flex;
